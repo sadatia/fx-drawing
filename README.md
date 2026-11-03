@@ -76,7 +76,10 @@ A lightweight, high-performance financial technical analysis whiteboard and anno
 
     Bash
     npm run build
-    🌐 Production Deployment (Nginx Example)
+
+
+---
+## 🌐 Production Deployment (Nginx Example)
     To build and deploy on an Ubuntu server running Nginx:
 
     Bash
@@ -89,7 +92,8 @@ A lightweight, high-performance financial technical analysis whiteboard and anno
     sudo chown -R www-data:www-data /var/www/sadatia
     sudo systemctl reload nginx
 
-🛠️ Built With
+---
+## 🛠️ Built With
 React - UI Component Library
 
 Tailwind CSS - Utility-first CSS framework
