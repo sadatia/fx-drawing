@@ -1,16 +1,112 @@
-# React + Vite
+# 📈 SADATIA FX Drawing Board
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A lightweight, high-performance financial technical analysis whiteboard and annotation tool built with **React**, **Tailwind CSS**, and **SVG**. Designed for quick Smart Money Concepts (SMC) charting, technical markup, and position risk modeling.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- **🎯 SMC Annotation Ribbon:** One-click tags for `BOS`, `CHoCH`, `FVG`, `OB`, `MB`, `SSL`, `BSL`, `EQH/EQL`, and `PO3`.
+- **🖐️ Dynamic Infinite Canvas:** Smooth pan and zoom capabilities using the **Hand Tool (`H`)** or **`Spacebar` + Click & Drag**.
+- **📐 Smart Fibonacci Retracement:** Dynamic Fibonacci level rendering ($0.0\%, 23.6\%, 38.2\%, 50.0\%, 61.8\%, 78.6\%, 100.0\%$).
+- **⚖️ Position Risk/Reward Calculator:** Visual Long/Short position tool with real-time portfolio risk calculation ($ and % target/stop metrics).
+- **✍️ Freehand & Vector Drawing Tools:**
+  - Freehand Line Sketch & Freehand Candlestick Pen
+  - Multi-point Trend Path Tool
+  - Trend Lines, Horizontal Lines & Rays
+  - Parallel Channels & Rectangle Zones
+  - Price Distance Ruler
+- **🎨 Theme Customization:** Dark and light canvas themes with grid snap support.
+- **📸 Snapshot Export:** High-resolution PNG chart export directly from SVG rendering.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## ⌨️ Keyboard Shortcuts
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+| Tool / Action | Shortcut |
+| :--- | :--- |
+| **Select & Move** | `V` |
+| **Pan / Hand Tool** | `H` *(or hold `Space` + Drag)* |
+| **Text Note / SMC Tag** | `T` |
+| **Freehand Pencil** | `P` |
+| **Candlestick Pen** | `C` |
+| **Risk / Reward Setup** | `R` |
+| **Price Distance Ruler** | `M` |
+| **Trend Line** | `L` |
+| **Trend Path Tool** | `W` |
+| **Horizontal Ray** | `Y` |
+| **Parallel Channel** | `A` |
+| **Rectangle Zone** | `E` |
+| **Fibonacci Grid** | `F` |
+| **Eraser** | `X` |
+| **Cancel / Reset** | `Esc` |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- **Node.js** (v18.x or later)
+- **npm** (v9.x or later)
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/sadatia/fx-drawing.git](https://github.com/sadatia/fx-drawing.git)
+   cd fx-drawing
+
+
+
+   Install dependencies:
+
+Bash
+npm install
+Start development server:
+
+Bash
+npm run dev
+Build for production:
+
+Bash
+npm run build
+🌐 Production Deployment (Nginx Example)
+To build and deploy on an Ubuntu server running Nginx:
+
+Bash
+# Build production bundle
+npm run build
+
+# Deploy to Nginx web root
+sudo rm -rf /var/www/sadatia/*
+sudo cp -r dist/* /var/www/sadatia/
+sudo chown -R www-data:www-data /var/www/sadatia
+sudo systemctl reload nginx
+🛠️ Built With
+React - UI Component Library
+
+Tailwind CSS - Utility-first CSS framework
+
+Vite - Next-generation frontend tooling
+
+📄 License
+This project is open-source and available under the MIT License.
+
+
+---
+
+### Step-by-Step Instructions to Save It to Your Server & GitHub
+
+Run the following commands in your Ubuntu terminal (`~/sadatia-app`):
+
+```bash
+cd ~/sadatia-app
+
+# 1. Create/Overwrite README.md with the content above
+nano README.md
+# (Paste the markdown content, press Ctrl+O, Enter, Ctrl+X)
+
+# 2. Stage, commit, and push to GitHub
+git add README.md
+git commit -m "docs: add detailed README.md file"
+git push
