@@ -59,29 +59,36 @@ A lightweight, high-performance financial technical analysis whiteboard and anno
 
 
    Install dependencies:
+   Bash
+    npm install
+    Start development server:
 
-Bash
-npm install
-Start development server:
+    Bash
+    npm run dev
 
-Bash
-npm run dev
-Build for production:
+    Bash
+    npm install
+    Start development server:
 
-Bash
-npm run build
-🌐 Production Deployment (Nginx Example)
-To build and deploy on an Ubuntu server running Nginx:
+    Bash
+    npm run dev
+    Build for production:
 
-Bash
-# Build production bundle
-npm run build
+    Bash
+    npm run build
+    🌐 Production Deployment (Nginx Example)
+    To build and deploy on an Ubuntu server running Nginx:
 
-# Deploy to Nginx web root
-sudo rm -rf /var/www/sadatia/*
-sudo cp -r dist/* /var/www/sadatia/
-sudo chown -R www-data:www-data /var/www/sadatia
-sudo systemctl reload nginx
+    Bash
+    # Build production bundle
+    npm run build
+
+    # Deploy to Nginx web root
+    sudo rm -rf /var/www/sadatia/*
+    sudo cp -r dist/* /var/www/sadatia/
+    sudo chown -R www-data:www-data /var/www/sadatia
+    sudo systemctl reload nginx
+
 🛠️ Built With
 React - UI Component Library
 
@@ -89,24 +96,26 @@ Tailwind CSS - Utility-first CSS framework
 
 Vite - Next-generation frontend tooling
 
-📄 License
+
+---
+## 📄 License
 This project is open-source and available under the MIT License.
 
 
----
+    ---
 
-### Step-by-Step Instructions to Save It to Your Server & GitHub
+    ### Step-by-Step Instructions to Save It to Your Server & GitHub
 
-Run the following commands in your Ubuntu terminal (`~/sadatia-app`):
+    Run the following commands in your Ubuntu terminal (`~/sadatia-app`):
 
-```bash
-cd ~/sadatia-app
+    ```bash
+    cd ~/sadatia-app
 
-# 1. Create/Overwrite README.md with the content above
-nano README.md
-# (Paste the markdown content, press Ctrl+O, Enter, Ctrl+X)
+    # 1. Create/Overwrite README.md with the content above
+    nano README.md
+    # (Paste the markdown content, press Ctrl+O, Enter, Ctrl+X)
 
-# 2. Stage, commit, and push to GitHub
-git add README.md
-git commit -m "docs: add detailed README.md file"
-git push
+    # 2. Stage, commit, and push to GitHub
+    git add README.md
+    git commit -m "docs: add detailed README.md file"
+    git push
